@@ -87,10 +87,10 @@
 		7878E0892B32EF0B0000C3FE /* ContentView */ = {
 			isa = PBXGroup;
 			children = (
+				7878E0792B32EE530000C3FE /* ContentView.swift */,
 				7878E08A2B32EF510000C3FE /* ViewModel */,
 				7878E08B2B32EF630000C3FE /* Model */,
 				7878E08C2B32EF790000C3FE /* Data */,
-				7878E0792B32EE530000C3FE /* ContentView.swift */,
 			);
 			path = ContentView;
 			sourceTree = "<group>";

@@ -18,6 +18,7 @@ extension View {
         HStack {
             Spacer()
             self
+            Spacer()
         }
     }
 }
