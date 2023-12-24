@@ -24,18 +24,28 @@ struct Pet: Codable {
     
     var hunger: String {
         let timeSince = calcTimeSince(data: lastMeal)
-        var string = "Hungry"
+        var string = ""
         
-        //hungry functionality
+        switch timeSince {
+        case 0..<30: string = "Satisfied"
+        case 30..<60: string = "Getting hungry..."
+        case 60...: string = "Hungry"
+        default: string = "IDK"
+        }
         
         return string
     }
     
     var thirst: String {
         let timeSince = calcTimeSince(data: lastDrink)
-        var string = "Thirsty"
+        var string = ""
         
-        //thirsty functionality
+        switch timeSince {
+        case 0..<30: string = "Satisfied"
+        case 30..<60: string = "Getting thirsty..."
+        case 60...: string = "Thirsty"
+        default: string = "IDK"
+        }
         
         return string
     }
